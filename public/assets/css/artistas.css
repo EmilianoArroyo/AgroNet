@@ -15,8 +15,8 @@ body{
     justify-content: center;
     align-items: center;
     position: relative; 
-    background-color: #e1e4e4;
-    color: #fff;
+    background-color: #F3FBF4;
+    color: #F3FBF4;
 }
 
 p{
@@ -31,21 +31,13 @@ h2{
         1px -1px 0 #141e2862, 
         -1px 1px 0 #141e2862,  
         1px 1px 0 #141e2862;    
-    color: #f79336;
+    color: #155340;
     font-size: 50px;
     font-weight: 350;
 }
 
 
 
-
-.navbar-expand-lg{
-    background-color: #141e28; 
-}
-
-.dropdown-menu{
-    list-style: none;
-}
 
 
 body {
@@ -99,7 +91,7 @@ header {
 }
 
 .btn-custom {
-    background-color: #f79336;
+    background-color: #8FE35B;
     color: #141e28;
     padding: 5px 20px;
     border-radius: 20px;
@@ -108,7 +100,8 @@ header {
 }
 
 .btn-custom:hover {
-    background-color: #ad6827;
+    background-color: #4ba13a; 
+    color: #F3FBF4;
 }
 
 .card{
@@ -122,7 +115,7 @@ header {
 }
 
 .card-text{
-    color: #fff;
+    color: #141e28;
     font-weight: 200;
     font-size: 18px;
 }
@@ -146,6 +139,7 @@ h1 {
     border-radius: 4px;
     padding: 5px;
     width: 100%;
+    border-radius: 5px;
     
 }
 
@@ -154,11 +148,12 @@ h1 {
     outline: none;
     flex: 1;
     padding: 5px;
+    border-radius: 5px;
 }
 
 .search-button {
-    background-color: #ffcc80; /* Color naranja pastel */
-    color: #333;
+    background-color: #8FE35B; /* Color naranja pastel */
+    color: #141e28;
     border: none;
     border-radius: 4px;
     padding: 5px 10px;
@@ -166,5 +161,11 @@ h1 {
 }
 
 .search-button:hover {
-    background-color: #ffa726; /* Color naranja pastel más oscuro al pasar el mouse */
+    background-color: #4ba13a; 
+    color: #F3FBF4;
+}
+
+.card{
+    background-color: #92BEA5;
+    color: #141e28;
 }

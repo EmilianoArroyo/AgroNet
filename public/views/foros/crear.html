@@ -9,67 +9,68 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="../../assets/css/inicio.css">
     <link rel="stylesheet" href="../../assets/css/crearForo.css">
-    <link rel="shortcut icon" href="../../assets/img/1.gif">
+    <link rel="shortcut icon" href="./../../assets/img/internos/AgroNet mini no-bg white.png">
 </head>
 
 <body>
-    <header>
-      <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/views/index/index.html"><img src="/assets/img/logomovible.gif" heights="100px" width="100px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="/views/index/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/views/foros/foros.html">Foros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/views/artistas/artistas.html">Artistas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/views/generos/generos.html">Géneros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/views/suscribete/suscribete.html">¡Suscribete!</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/views/contacto/contactanos.html">Contáctanos</a>
-              </li>
+  <header>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+      <div class="container-fluid">
+        <a id="logoTOP" class="navbar-brand" href="../index/index.html"><img src="/assets/img/internos/AgroNet mini no-bg white.png" heights="100px" width="100px" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" id="imagenLOGO">
+              <img src="/assets/img/internos/AgroNet Letras no-bg.png" alt="Logo"> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="../index/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./../../views/foros/foros.html">Comunidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/artistas/artistas.html">Productores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/generos/generos.html">Frutas y Verduras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/contacto/contactanos.html">Contáctanos</a>
+            </li>
+          </ul>
+          <div class="btn-group dropstart" style="margin-right: 20px;">
+            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Mi
+              Perfil</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="/views/logins/login.html">Log In</a></li>
+              <li><a class="dropdown-item" href="/views/registro/registro.html">¡Registrate!</a></li>
             </ul>
-            <div class="btn-group dropstart" style="margin-right: 20px;">
-              <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Mi
-                Perfil</button>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="/views/logins/login.html">Log In</a></li>
-                <li><a class="dropdown-item" href="/views/registro/registro.html">¡Registrate!</a></li>
-              </ul>
-            </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
 
 
-    <h1 class="text-center mt-5"><i class="fas fa-comments" style="color: #f78036;"></i> Crear un nuevo foro</h1>
-    <p class="text-center">Crea un nuevo foro y conecta con personas con tus mismos gustos</p>
+    <h1 class="text-center mt-5"><i class="fas fa-comments" style="color: #155340;"></i> Crear una nueva comunidad</h1>
+    <p class="text-center">Crea una nueva comunidad y conecta con personas con los mismos intereses</p>
 
     <div class="container">
         <div class="card bg-card">
             <div class="card-body " id="cardbody">
-                <h5 class="card-title mb-4" id="realizapublicacion" style="font-weight: lighter; "><i class="fas fa-comments" style="color: #f78036;"></i> Crear foro</h5>
+                <h5 class="card-title mb-4" id="realizapublicacion" style="font-weight: lighter; "><i class="fas fa-comments" style="color: #92BEA5;"></i> Crear comunidad</h5>
 
 
                 <form id="foroForm">
                     <div class="form-group mb-3">
-                        <label for="nombre">Nombre del foro: <span class="text-custom">*</span></label>
+                        <label for="nombre">Nombre de la comunidad: <span class="text-custom">*</span></label>
                         <div class="input-group">
                             <span class="input-group-text"><i class="fas fa-list"></i></span>
                             <input type="text" class="form-control" id="nombreForo" placeholder="Nombre del foro"
@@ -77,14 +78,14 @@
                         </div>
                     </div>
                     <div class="form-group mb-3">
-                        <label for="apellido">Descripción del foro: <span class="text-custom">*</span></label>
+                        <label for="apellido">Descripción de la comunidad: <span class="text-custom">*</span></label>
                         <div class="input-group">
                             <span class="input-group-text"><i class="fas fa-list"></i></span>
                         <input type="text" class="form-control" id="descripcionForo" placeholder="Descripción" required>
                     </div>
                 </div>
                     <div class="form-group mb-3">
-                        <label for="username">Imagen del foro: </label>
+                        <label for="username">Imagen de la comunidad: </label>
                         <input type="file" class="form-control" id="imagenForo" accept="image/*">
                     </div>
                     <div class="form-group mb-3">
@@ -98,49 +99,49 @@
                         <div class="col-md-12">
                             <div class="btn-group-toggle mb-1" data-toggle="buttons">
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="Rock"> Rock
+                                    <input type="checkbox" class="listaEtiquetas" value="Fruta"> Fruta
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="Memes"> Memes
+                                    <input type="checkbox" class="listaEtiquetas" value="Comercio"> Comercio
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="Rap/Hip-Hop"> Rap/Hip-Hop
+                                    <input type="checkbox" class="listaEtiquetas" value="Verdura"> Verdura
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="México"> México
+                                    <input type="checkbox" class="listaEtiquetas" value="Jalisco"> Jalisco
                                 </label> 
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="Pop"> Pop
+                                    <input type="checkbox" class="listaEtiquetas" value="Local"> Local
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="Tik Tok"> Tik Tok
+                                    <input type="checkbox" class="listaEtiquetas" value="Mayoreo"> Mayoreo
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="Critica"> Critica
+                                    <input type="checkbox" class="listaEtiquetas" value="Menudeo"> Menudeo
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="Artistas"> Artistas
+                                    <input type="checkbox" class="listaEtiquetas" value="Michoacan"> Michoacán
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="80's"> 80's
+                                    <input type="checkbox" class="listaEtiquetas" value="Trabajo"> Trabajo
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="K-pop"> K-pop
+                                    <input type="checkbox" class="listaEtiquetas" value="Compra y Venta"> Compra y Venta
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="Videojuegos"> Videojuegos
+                                    <input type="checkbox" class="listaEtiquetas" value="Fumigación"> Fumigación
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="Peliculas"> Peliculas
+                                    <input type="checkbox" class="listaEtiquetas" value="Herramientas"> Herramientas
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="Anime"> Anime
+                                    <input type="checkbox" class="listaEtiquetas" value="Mercado"> Mercado
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="Inglés"> Inglés
+                                    <input type="checkbox" class="listaEtiquetas" value="Servicios"> Servicios
                                 </label>
                                 <label class="btn btn-outline-primary mb-2">
-                                    <input type="checkbox" class="listaEtiquetas" value="Argentina"> Argentina
+                                    <input type="checkbox" class="listaEtiquetas" value="Recoger"> Recoger
                                 </label>
                             </div>
                         </div>

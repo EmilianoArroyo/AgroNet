@@ -4,40 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
+  <title>Inicio - AgroNet</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="./../../assets/css/inicio.css">
   <link rel="stylesheet" href="./../../assets/css/footer.css">
-  <link rel="shortcut icon" href="./../../assets/img/1.gif">
+  <link rel="shortcut icon" href="./../../assets/img/internos/AgroNet mini no-bg white.png">
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index/index.html"><img src="/assets/img/logomovible.gif" heights="100px" width="100px"></a>
+        <a id="logoTOP" class="navbar-brand" href="../index/index.html"><img src="/assets/img/internos/AgroNet mini no-bg white.png" heights="100px" width="100px" ></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
           aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" id="imagenLOGO">
+              <img src="/assets/img/internos/AgroNet Letras no-bg.png" alt="Logo"> 
+            </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="../index/index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./../../views/foros/foros.html">Foros</a>
+              <a class="nav-link" aria-current="page" href="./../../views/foros/foros.html">Comunidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/views/artistas/artistas.html">Artistas</a>
+              <a class="nav-link" href="/views/artistas/artistas.html">Productores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/views/generos/generos.html">Géneros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/views/suscribete/suscribete.html">¡Suscríbete!</a>
+              <a class="nav-link" href="/views/generos/generos.html">Frutas y Verduras</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/views/contacto/contactanos.html">Contáctanos</a>
@@ -56,8 +56,8 @@
     </nav>
   </header>
 
-  <h1 class="text-center mt-5"><i class="fas fa-fire" style="color: #f78036;"></i> Álbumes en Tendencia</h1>
-  <p class="text-center">Estos son los álbumes en tendencia global:</p>
+  <h1 class="text-center mt-5"><i class="fas fa-seedling" style="color: #155340;"></i> Productos de Temporada</h1>
+  <p class="text-center">Estos son los productos de temporada:</p>
   <div class="slider">
     <input type="radio" name="testimonial" id="t-1" checked>
     <input type="radio" name="testimonial" id="t-2">
@@ -66,19 +66,24 @@
     <input type="radio" name="testimonial" id="t-5">
     <div class="testimonials">
       <label class="item" for="t-1">
-        <img class="albumesC" src="../../assets/img/albumes/hce.jpg">
+        <button type="button" class="btn btn-custom2 capsule-btn-custom" style="display: none;">Aguacate</button>
+        <img class="albumesC" src="../../assets/img/productos/aguacate.png">
       </label>
       <label class="item" for="t-2">
-        <img class="albumesC" src="../../assets/img/albumes/tc.jpg">
+        <button type="button" class="btn btn-custom2 capsule-btn-custom" style="display: none;">Mango</button>
+        <img class="albumesC" src="../../assets/img/productos/Mango.png">
       </label>
       <label class="item" for="t-3">
-        <img class="albumesC" src="../../assets/img/albumes/hdwgsd.jpg">
+        <button type="button" class="btn btn-custom2 capsule-btn-custom" style="display: none;">Limon</button>
+        <img class="albumesC" src="../../assets/img/productos/limon.png">
       </label>
       <label class="item" for="t-4">
-        <img class="albumesC" src="../../assets/img/albumes/aurora.jpg">
+        <button type="button" class="btn btn-custom2 capsule-btn-custom" style="display: none;">Fresa</button>
+        <img class="albumesC" src="../../assets/img/productos/fresa.png">
       </label>
       <label class="item" for="t-5">
-        <img class="albumesC" src="../../assets/img/albumes/wywh.png">
+        <button type="button" class="btn btn-custom2 capsule-btn-custom" style="display: none;">Naranja</button>
+        <img class="albumesC" src="../../assets/img/productos/Naranja.png">
       </label>
     </div>
     <br />
@@ -92,8 +97,8 @@
     </div>
   </div>
 
-  <h1 class="text-center mt-5"><i class="fas fa-fire" style="color: #f78036;"></i> Ratings en Tendencia</h1>
-  <p class="text-center">Califica y enterate de lo que opinan los criticos y oyentes de los ultimos álbumes en tendencia:</p>
+  <h1 class="text-center mt-5"><i class="fas fa-tractor" style="color: #155340;"></i> Reseñas a Productores</h1>
+  <p class="text-center">Califica y enterate de lo que opinan los compradores de distintos productores:</p>
   <div class="container mt-5">
     <div class="row">
         <!-- Primera tarjeta de crítica -->
@@ -101,11 +106,11 @@
             <div class="card ">
                 <div class="card-content">
                   <div class="card-image-container">
-                    <img src="../../assets/img/albumes/rep.jpg" class="card-img-top card-image" alt="Imagen Crítica 1">
+                    <img src="../../assets/img/opiniones/opinion1.jpg" class="card-img-top card-image" alt="Imagen Crítica 1">
                   </div>
                     <div class="card-body">
-                        <h5 class="card-title">Reputation</h5>
-                        <p class="card-text">"A lo largo de cada pista se puede sentir un brillo electro armonioso, aunque algo frío, dónde la vibra predominante es el escapismo romántico..." <br>- Karla Michelle Miramontes Aguayo.</p>
+                        <h5 class="card-title">Aguacates Fernandez</h5>
+                        <p class="card-text">"Aguacates de primera, ideales para mi restaurante de mariscos, son muy grandes y el productor me dio buen trato y precio..." <br><strong>- Mariscos Puerto Alegre.</strong></p>
                     </div>
                 </div>
                 <div class="rating-badge-green">9.5</div>
@@ -116,11 +121,11 @@
             <div class="card ">
                 <div class="card-content">
                   <div class="card-image-container">
-                    <img src="../../assets/img/albumes/hdwgsd.jpg" class="card-img-top" alt="Imagen Crítica 2">
+                    <img src="../../assets/img/opiniones/opinion2.jpg" class="card-img-top" alt="Imagen Crítica 2">
                   </div>
                     <div class="card-body">
-                        <h5 class="card-title">How Did We Get So Dark?</h5>
-                        <p class="card-text">"Hay temas que al escucharlos he tenido la sensación de estar escuchando a varias bandas míticas del rock..." <br>- Dod magazine</p>
+                        <h5 class="card-title">Frutas El Mexicano</h5>
+                        <p class="card-text">"La papaya esta muy rica y muy dulce, fui a comprar al local de frutas el mexicano para desayunar toda la semana papaya!" <br><strong>- Jaime Alvarez</strong></p>
                     </div>
                 </div>
                 <div class="rating-badge-green">9.5</div>
@@ -131,11 +136,11 @@
             <div class="card ">
                 <div class="card-content">
                   <div class="card-image-container">
-                    <img src="../../assets/img/albumes/nadiesabe.png" class="card-img-top" alt="Imagen Crítica 3">
+                    <img src="../../assets/img/opiniones/opinion3.jpg" class="card-img-top" alt="Imagen Crítica 3">
                   </div>
                     <div class="card-body">
-                        <h5 class="card-title">Nadie Sabe Lo Que Va a Pasar Mañana</h5>
-                        <p class="card-text">"No es su peor disco -ya que todos sabemos que ese fue “Oasis”-, con Base y Fundamento tengo que declarar que “Nadie sabe lo que va a pasar mañana” es un sufrimiento de disco que bien pudo titularse “Las densas lágrimas de un billonario”." <br>- El Calce</p>
+                        <h5 class="card-title">Berries y Frutas Irma</h5>
+                        <p class="card-text">"Las fresas son de buena calidad, pero son algo pequeñas, las compre para hacer y vender fresas con crema. No me convencio el tamaño de las fresas para lo que planeaba hacer..." <br><strong>- Antojitos Doña Karen</strong></p>
                     </div>
                 </div>
                 <div class="rating-badge-yellow">7.0</div>
@@ -146,11 +151,11 @@
           <div class="card ">
               <div class="card-content">
                 <div class="card-image-container">
-                  <img src="../../assets/img/albumes/bocanada.jpeg" class="card-img-top" alt="Imagen Crítica 4">
+                  <img src="../../assets/img/opiniones/opinion4.png" class="card-img-top" alt="Imagen Crítica 4">
                 </div>
                   <div class="card-body">
-                      <h5 class="card-title">Bocanada</h5>
-                      <p class="card-text">"Bocanada de gustavo cerati, es un viaje a una combinacion de elementos musicales, se notan las influencias de todo el desarrollo del rock en argentina, es sin dudas una obra cumbre." <br>- Abraham</p>
+                      <h5 class="card-title">Frutas Villaseñor</h5>
+                      <p class="card-text">"La fruta con el mejor precio! Compré toronja y guayaba para mi venta de licuados, se venden muy bien los licuados con estas frutas!!" <br><strong>- Licuados y tortas El Tapatio</strong></p>
                   </div>
               </div>
               <div class="rating-badge-green">9.7</div>
@@ -160,8 +165,8 @@
 </div>
 
 
-  <h2 class="text-center mt-5"><i class="fas fa-comments " style="color: #f78036;"></i> Foros que te podrían interesar</h2>
-  <p class="text-center">Discute, enterate y comparte opiniones en los siguientes foros:</p>
+  <h2 class="text-center mt-5"><i class="fas fa-comments " style="color: #155340;"></i> Comunidades que te podrían interesar</h2>
+  <p class="text-center">Forma parte de las siguientes comunidades:</p>
   <div class="container mt-5">
     <div class="row"id="forums">
 
@@ -169,7 +174,7 @@
   </div>
   <br>
   <footer>
-      © 2023 CyberMusik. Todos los derechos reservados.
+      © 2024 AgroNet. Todos los derechos reservados.
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

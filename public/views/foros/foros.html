@@ -4,64 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foros</title>
+    <title>Comunidades - AgroNet</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="../../assets/css/inicio.css">
     <link rel="stylesheet" href="../../assets/css/foros.css">
     <link rel="stylesheet" href="../../assets/css/footer.css">
-    <link rel="shortcut icon" href="../../assets/img/1.gif">
+    <link rel="shortcut icon" href="./../../assets/img/internos/AgroNet mini no-bg white.png">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../../assets/img/logomovible.gif" heights="100px"
-                        width="100px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarColor01">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="./../../views/index/index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="./../../views/foros/foros.html">Foros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./../../views/artistas/artistas.html">Artistas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./../../views/generos/generos.html">Géneros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./../../views/suscribete/suscribete.html">¡Suscríbete!</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./../../views/contacto/contactanos.html">Contáctanos</a>
-                        </li>
-                    </ul>
-                    <div class="btn-group dropstart" style="margin-right: 20px;">
-                        <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"> Mi
-                            Perfil</button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="./../../views/logins/login.html">Log In</a></li>
-                            <li><a class="dropdown-item" href="./../../views/registro/registro.html">¡Registrate!</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <header>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+      <div class="container-fluid">
+        <a id="logoTOP" class="navbar-brand" href="../index/index.html"><img src="/assets/img/internos/AgroNet mini no-bg white.png" heights="100px" width="100px" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" id="imagenLOGO">
+              <img src="/assets/img/internos/AgroNet Letras no-bg.png" alt="Logo"> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="../index/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./../../views/foros/foros.html">Comunidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/artistas/artistas.html">Productores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/generos/generos.html">Frutas y Verduras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/contacto/contactanos.html">Contáctanos</a>
+            </li>
+          </ul>
+          <div class="btn-group dropstart" style="margin-right: 20px;">
+            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Mi
+              Perfil</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="/views/logins/login.html">Log In</a></li>
+              <li><a class="dropdown-item" href="/views/registro/registro.html">¡Registrate!</a></li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
     <div class="container mt-3">
         <div class="card bg-card card-nuevoForo">
@@ -69,21 +64,21 @@
             <div class="row">
             <div class="col-lg-6 mb-3 mt-3 card-text-nuevoForo">
                     <div>
-                        <h2 class=" text-nuevoForo">¡Crea un nuevo foro! <i class="fas fa-plus"
-                            style="color: #f78036"></i></h2>
-                            <p class=" text-nuevoForo mt-3">Discute, enterate y comparte opiniones <strong>en tu propio foro</strong></p>
-                            <p class="text-nuevoForo mt-3"><strong>Es fácil y gratis</strong>, solo da click a crear y sigue los pasos para crear tu propio foro</p>
-                            <p class=" text-nuevoForo nuevoForoFooter mt-3">Puedes invitar a tus amigos</p>
+                        <h2 class=" text-nuevoForo">¡Crea una nueva comunidad! <i class="fas fa-plus"
+                            style="color: #8FE35B"></i></h2>
+                            <p class=" text-nuevoForo mt-3">Crea relaciones, comparte publicaciones y comenta <strong>en tu propia comunidad</strong></p>
+                            <p class="text-nuevoForo mt-3"><strong>Es fácil y gratis</strong>, solo da click a crear y sigue los pasos para crear tu propia comunidad</p>
+                            <p class=" text-nuevoForo nuevoForoFooter mt-3">Puedes invitar a quien quieras</p>
                     </div>
                 </div>
                 <div class="col-lg-6 mb-3 mt-3">
                     <div class="card crearNuevoForo">
-                        <img src="../../assets/img/crearNuevoForo.jpg" class="card-img-redondeada"
+                        <img src="../../assets/img/internos/CrearComunidad.jpg" class="card-img-redondeada"
                             alt="Imagen Crítica 1">
                         <div class="card-body">
-                            <h5 class="card-title">Crear foro <i class="fas fa-plus-circle"
-                                    style="color: #141e28"></i></h5>
-                            <p class="card-text">Crea un nuevo foro y conecta con personas con tus mismos gustos</p>
+                            <h5 class="card-title">Crear comunidad <i class="fas fa-plus-circle"
+                                    style="color: #8FE35B"></i></h5>
+                            <p class="card-text">Crea una nueva comunidad y conecta con personas </p>
                             <a href="./crear.html" class="btn btn-custom">Crear</a>
                         </div>
                     </div>
@@ -95,8 +90,8 @@
 
     <div class="container mt-3">
         <div class="card bg-card">
-            <h2 class="text-center mt-3"><i class="fas fa-comments" style="color: #f78036;"></i> Foros en tendencia</h2>
-            <p class="text-center">Estos son los foros más populares:</p>
+            <h2 class="text-center mt-3"><i class="fas fa-comments" style="color: #155340;"></i> Comunidades en tendencia</h2>
+            <p class="text-center">Estos son las comunidades más populares:</p>
             <div class="container mt-2">
                 <div class="row" id="forosEnTendencia">
                 </div>
@@ -106,7 +101,7 @@
 
     <br>
     <footer>
-        © 2023 CyberMusik. Todos los derechos reservados.
+        © 2024 AgroNet. Todos los derechos reservados.
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

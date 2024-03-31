@@ -1,20 +1,18 @@
 
-
 *{
     padding:0;
     margin:0;
-    box-sizing: border-box; 
+    box-sizing: border-box; /*para que el tamaño de los elementos no se modifique*/
 }
 
 body{
     margin:0;
-    display: block; 
+    display: block; /*permite que los elementos se acomoden en varias lineas*/
     justify-content: center;
     align-items: center;
-    position: relative; 
-    background-color: #e1e4e4;
-    color: #fff;
-    
+    position: relative; /*para que el contenedor se ajuste al tamaño de los elementos*/
+    background-color: #F3FBF4;
+	font-family: 'Roboto', sans-serif;
 }
 
 p{
@@ -29,49 +27,33 @@ h2{
         1px -1px 0 #141e2862, 
         -1px 1px 0 #141e2862,  
         1px 1px 0 #141e2862;    
-    color: #f79336;
+    color: #8FE35B;
     font-size: 50px;
     font-weight: 350;
 }
 
 .custom-form input, .custom-form textarea {
-    border-color: #f79336;
+    border-color: #8FE35B;
     background-color: #fff;
     transition: border-color 0.3s, background-color 0.3s; 
 }
 
 .custom-form input:focus, .custom-form textarea:focus {
-    border-color: #f79336;  
-    background-color: #acdfe0;
+    border-color: #8FE35B;  
+    background-color: #8FE35B;
     outline: none;  
 }
 
-header{
-    color: white;
-}
-
-.navbar-expand-lg{
-    background-color: #141e28; 
-}
-
-.dropdown-menu{
-    list-style: none;
-}
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
 .contact-form {
-    background-color: #141e28;
+    background-color: #92BEA5;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btn-custom {
-    background-color: #f79336;
+    background-color: #8FE35B;
     color: #141e28;
     padding: 10px 20px;
     border-radius: 20px;
@@ -80,7 +62,8 @@ body {
 }
 
 .btn-custom:hover {
-    background-color: #ad6827;
+    background-color: #4ba13a;
+    color: #F3FBF4;
 }
 
 
@@ -117,5 +100,5 @@ header {
 }
 
 .text-custom{
-    color: #f79336;
+    color: #155340;
 }

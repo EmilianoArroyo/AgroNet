@@ -119,3 +119,31 @@ function logout() {
 function escapeHtml(unsafe) {
     return unsafe.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
+
+  
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('input[name="testimonial"]').forEach(input => {
+      input.addEventListener('change', function() {
+        // Oculta todos los botones primero
+        document.querySelectorAll('.item .capsule-btn-custom').forEach(btn => {
+          btn.style.display = 'none';
+        });
+  
+        // Muestra el botón del label actual si el input está seleccionado
+        if (this.checked) {
+          let currentLabel = document.querySelector(`label[for="${this.id}"]`);
+          let button = currentLabel.querySelector('.capsule-btn-custom');
+          if (button) {
+            button.style.display = 'block';
+          }
+        }
+      });
+    });
+  
+    // Disparar manualmente el evento change en el input activo para inicializar el estado visible del botón
+    let activeInput = document.querySelector('input[name="testimonial"]:checked');
+    if(activeInput) {
+      activeInput.dispatchEvent(new Event('change'));
+    }
+  });
+  

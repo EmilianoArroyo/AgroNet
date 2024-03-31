@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative; /*para que el contenedor se ajuste al tamaño de los elementos*/
-    background-color: #e1e4e4;
+    background-color: #F3FBF4;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -19,7 +19,10 @@ header{
 }
 
 .navbar-expand-lg{
-    background-color: #141e28; 
+    background-color: #92BEA5; 
+    font-weight: 400;
+    font-size: large;
+    outline: 3px solid #141e28;
 }
 
 navbar{
@@ -31,7 +34,9 @@ navbar{
 }
 
 .container-fluid{
-    color: white;
+    color: #141e28;
+    font-weight: 400;
+    font-size: large;
 }
 
 
@@ -72,7 +77,7 @@ navbar{
 	width: 5px;
 	border-radius: 50%;
 	cursor: pointer;
-	background-color: orangered;
+	background-color: #92BEA5;
 	margin: 7px;
 	transition-duration: 0.2s;
 }
@@ -285,7 +290,7 @@ p {
 }
 
 .btn-custom {
-    background-color: #f79336;
+    background-color: #8FE35B;
     color: #141e28;
     padding: 10px 20px;
     border-radius: 20px;
@@ -294,12 +299,13 @@ p {
 }
 
 .btn-custom:hover {
-    background-color: #ad6827;
+    background-color: #4ba13a;
+    color: #F3FBF4;
 }
 
 .card{
-    background-color: #141e28;
-    color: white;
+    background-color: #92BEA5;
+    color: #141e28;
 }
 
 /* .bienvenidap {
@@ -317,3 +323,58 @@ p {
     font-size: 18px;
 } */
 
+
+#imagenLOGO > img{
+    margin: 0;
+    padding-right: 15px;
+    width: 200px;
+    height: auto;
+}
+
+#logoTOP{
+    padding-right: 0;
+    margin: 0;
+}
+
+/* Estilo para centrar el botón sobre la imagen */
+.item {
+    position: relative;
+    display: inline-block; /* Asegura que el contenedor se ajuste al contenido */
+  }
+  
+  .item .capsule-btn-custom{
+    position: absolute;
+    background-color: #92BEA5;
+    width: 50%;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50rem; /* Esto da el aspecto de cápsula, ajusta según necesites */
+    z-index: 10; /* Asegura que el botón se muestre sobre la imagen */
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  .albumesC {
+    display: block; /* Esto ayuda a evitar cualquier espacio extraño alrededor de la imagen */
+    width: 100%; /* Ajusta la imagen al contenedor padre */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+ 
+  .btn-custom2:hover {
+    background-color: #4ba13a;
+    box-shadow: 0 0 10px #F3FBF4, /* Brillo exterior blanco */
+                 0 0 20px #F3FBF4, /* Puedes cambiar el color del brillo aquí */
+                 0 0 30px rgba(143, 227, 91, 0.7), /* Brillo verde #8FE35B */
+                 0 0 40px rgba(143, 227, 91, 0.7),
+                 0 0 50px rgba(143, 227, 91, 0.7),
+                 0 0 60px rgba(143, 227, 91, 0.7),
+                 0 0 70px rgba(143, 227, 91, 0.7);
+    text-shadow: 0 0 5px #F3FBF4, /* Sombra del texto para agregar brillo */
+                  0 0 10px #F3FBF4,
+                  0 0 20px rgba(143, 227, 91, 0.7),
+                  0 0 30px rgba(143, 227, 91, 0.7),
+                  0 0 40px rgba(143, 227, 91, 0.7),
+                  0 0 50px rgba(143, 227, 91, 0.7),
+                  0 0 60px rgba(143, 227, 91, 0.7),
+                  0 0 70px rgba(143, 227, 91, 0.7);
+}
