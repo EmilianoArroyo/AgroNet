@@ -6,58 +6,56 @@
     <title>Perfil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./../../assets/css/inicio.css">
+    <link rel="stylesheet" href="./../../assets/css/footer.css">
     <link rel="stylesheet" href="../../assets/css/profile.css">
-    <link rel="shortcut icon" href="../../assets/img/1.gif">
+    <link rel="shortcut icon" href="../../assets/img/internos/AgroNet mini no-bg.png">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../../assets/img/logomovible.gif" heights="100px"
-                        width="100px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarColor01">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index/index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/views/foros/foros.html">Foros</a>
-                          </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../artistas/artistas.html">Artistas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../generos/generos.html">Géneros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../suscribete/suscribete.html">¡Suscríbete!</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../contacto/contactanos.html">Contáctanos</a>
-                        </li>
-                    </ul>
-                    <div class="btn-group dropstart" style="margin-right: 20px;">
-                        <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"> Mi
-                            Perfil</button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="../logins/login.html">Log In</a></li>
-                            <li><a class="dropdown-item" href="../registro/registro.html">¡Registrate!</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+          <div class="container-fluid">
+            <a id="logoTOP" class="navbar-brand" href="../index/index.html"><img src="/assets/img/internos/AgroNet mini no-bg white.png" heights="100px" width="100px" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+              aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item" id="imagenLOGO">
+                  <img src="/assets/img/internos/AgroNet Letras no-bg.png" alt="Logo"> 
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./../../views/foros/foros.html">Comunidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/views/artistas/artistas.html">Productores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/views/generos/generos.html">Frutas y Verduras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/views/contacto/contactanos.html">Contáctanos</a>
+                </li>
+              </ul>
+              <div class="btn-group dropstart" style="margin-right: 20px;">
+                <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Mi
+                  Perfil</button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="/views/logins/login.html">Log In</a></li>
+                  <li><a class="dropdown-item" href="/views/registro/registro.html">¡Registrate!</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>    
 
 
     <div class="container">
@@ -76,14 +74,14 @@
                                     <p class="text-secondary mb-1"><i class="fas fa-envelope"></i> Correo Electrónico</p>
                                     <p class="text-secondary mb-1"><i class="fas fa-phone"></i> Teléfono</p>
                                     <p class="text-muted font-size-sm"><i class="fas fa-album"></i> Album Favorito</p>
-                                    <p class="text-secondary mb-1"><i class="fas fa-genre"></i> Teléfono</p>
+                                    <p class="text-secondary mb-1"><i class="fa-solid fa-leaf"></i> Teléfono</p>
                                     <!-- Más información del usuario aquí -->
                                     <hr>
                                     <h5 class="text-center"><i class="fas fa-role"></i>Rol</h5>
                                 <p class="text-muted font-size-sm"><i class="fas fa-usname"></i>USUARIO</p>
                                 </div>
                                 <div class="agregar-album-container" style="display:none;">
-                                    <a href="album.html" class="btn-agregar-album">¿Quieres agregar un álbum? Presiona aquí</a>
+                                    <a href="product.html" class="btn-agregar-album">¿Quieres agregar un producto? Presiona aquí</a>
                                     <br>
                                     <br>
                                 </div>
@@ -141,7 +139,7 @@
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-sm-3">
-                                        <h6 class="mb-0" id="genresh6">Género favorito</h6>
+                                        <h6 class="mb-0" id="genresh6">Producto favorito</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
                                         <input type="text" class="form-control" id="genres" name="genres"  />
@@ -149,7 +147,7 @@
                                 </div>
                                 <div class="row mb-3 hs">
                                     <div class="col-sm-3">
-                                        <h6 class="mb-0" id="albumfavh6">Album Favorito</h6>
+                                        <h6 class="mb-0" id="albumfavh6">Fruta o verdura favorita</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
                                         <input type="text" class="form-control" id="albumfav" name="albumfav"  />

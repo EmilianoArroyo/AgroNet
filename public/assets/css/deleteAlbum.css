@@ -28,7 +28,7 @@ body {
 }
 
 #backButton {
-    position: fixed;
+    position: absolute;
     top: 150px;
     left: 10px;
     z-index: 1000;

@@ -10,4 +10,4 @@ const commentSchema = new mongoose.Schema({
     albumId: { type: String, required: true }
 });
 
-module.exports = mongoose.model('AlbumReview', commentSchema);
+module.exports = mongoose.model('Review', commentSchema);

@@ -10,9 +10,9 @@ $(document).ready(function() {
                     <img src="/uploads/${data.albumPhoto}" class="card-img-top" alt="Portada del Álbum">
                     <div class="card-body">
                         <h5 class="card-title">${$('<div>').text(data.name).html()}</h5>
-                        <p class="card-text">Año: ${$('<div>').text(data.release).html()}</p>
+                        <p class="card-text">Precio: ${$('<div>').text(data.genre).html()}</p>
                         <a class="btn btn-danger" onclick="eliminarAlbum('${data._id}')">
-                            <i class="fas fa-trash"></i> Eliminar Álbum
+                            <i class="fas fa-trash"></i> Eliminar Producto
                         </a>
                     </div>
                 `;

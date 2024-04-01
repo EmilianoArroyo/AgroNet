@@ -1,4 +1,4 @@
-const Artist = require('./../models/artistsModel');
+const Artist = require('./../models/sellerModel');
 const { response } = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');

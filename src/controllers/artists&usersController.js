@@ -1,5 +1,5 @@
 const Usuario = require('./../models/usersModel');
-const Artist = require('./../models/artistsModel');
+const Artist = require('./../models/sellerModel');
 
 class ArtistsUsers {
     welcome(req, res) {

@@ -1,7 +1,7 @@
 const Post = require('./../models/postsModel');
 const Comment = require('./../models/commentsModel');
 const Usuario = require('./../models/usersModel');
-const Artist = require('./../models/artistsModel');
+const Artist = require('./../models/sellerModel');
 const jwt = require('jsonwebtoken');
 const { response } = require('express');
 

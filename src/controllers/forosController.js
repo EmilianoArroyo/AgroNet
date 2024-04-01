@@ -1,6 +1,6 @@
 const Foro = require('./../models/forosModel');
 const Usuario = require('./../models/usersModel');
-const Artist = require('./../models/artistsModel');
+const Artist = require('./../models/sellerModel');
 const { response } = require('express');
 const path = require('path');
 const fs = require('fs');

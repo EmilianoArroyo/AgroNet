@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 $('.main-body .card-body h4').text(userData.name + ' ' + userData.apellido);
                 $('.main-body .card-body .text-secondary.mb-1:has(i.fas.fa-envelope)').text(" "+userData.email).prepend($('<i class="fas fa-envelope"></i>'));
                 $('.main-body .card-body .text-secondary.mb-1:has(i.fas.fa-phone)').text(" "+userData.phone).prepend($('<i class="fas fa-phone"></i>'));
-                $('.main-body .card-body .text-muted.font-size-sm:has(i.fas.fa-album)').text(' Album favorito: ' + userData.albumfav).prepend($('<strong>&#9835;</strong>'));
-                $('.main-body .card-body .text-secondary.mb-1:has(i.fas.fa-genre)').text(' Género favorito: ' + userData.genres).prepend($('<strong>&#119070;</strong>'));
+                $('.main-body .card-body .text-muted.font-size-sm:has(i.fas.fa-album)').text(' Producto favorito: ' + userData.albumfav).prepend($('<i class="fa-regular fa-lemon"></i>'));
+                $('.main-body .card-body .text-secondary.mb-1:has(i.fa-solid.fa-leaf)').text(' Alimento favorito: ' + userData.genres).prepend($('<i class="fa-solid fa-leaf"></i>'));
                 $('.main-body .card-body h5:has(i.fas.fa-role)').html('<strong>&#128100;</strong> ' + userData.userType);
                 $('.main-body .card-body p:has(i.fas.fa-usname)').text('@' + userData.username).prepend('<i class="fas fa-usname"></i>');
                 $('#name').val(userData.name);
@@ -151,10 +151,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 $('.main-body .card-body img').attr('src', `/uploads/${userData.profilePhoto}`);
                 $('.main-body .card-body h4').text(userData.name);
                 $('.main-body .card-body .text-secondary.mb-1:has(i.fas.fa-envelope)').text(" " + userData.email).prepend($('<i class="fas fa-envelope"></i>'));
-                $('.main-body .card-body .text-secondary.mb-1:has(i.fas.fa-phone)').text(" " + userData.genre).prepend($('<strong>&#9835;</strong> Género: '));
+                $('.main-body .card-body .text-secondary.mb-1:has(i.fas.fa-phone)').text(" Principal producto:" + userData.genre).prepend($('<i class="fa-solid fa-tractor"></i> '));
                 $('.main-body .card-body .text-muted.font-size-sm:has(i.fas.fa-album)').text(' Descripción: ' + userData.description).prepend($('<i class="fas fa-file-alt"></i>'));
-                $('.main-body .card-body .text-secondary.mb-1:has(i.fas.fa-genre)').text(' Influencias: '+userData.Influences).prepend($('<strong>&#127928;</strong>'))
-                $('.main-body .card-body h5:has(i.fas.fa-role)').html('<strong>&#127908;</strong> ' + userData.userType);
+                $('.main-body .card-body .text-secondary.mb-1:has(i.fa-solid.fa-leaf)').text(' Lugar: '+userData.Influences).prepend($('<i class="fa-solid fa-location-dot"></i>'))
+                $('.main-body .card-body h5:has(i.fas.fa-role)').html('<i class="fa-solid fa-money-bill-wheat"></i> Seller');
                 $('.main-body .card-body p:has(i.fas.fa-usname)').text(' @' + userData.username).prepend($('<i class="fas fa-usname"></i>'));
                 $('#name').val(userData.name);
                 $('#apellido').val(userData.genre).attr('name', 'genre');

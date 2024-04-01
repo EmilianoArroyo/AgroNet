@@ -10,9 +10,12 @@ function welcome() {
         type: "GET",
         url: "/api/welcome",
         success: function(response) {
+            if (response.includes("artist")) {
+                response = response.replace("artist", "productor")
+            }
             Swal.fire({
                 title: escapeHtml(response),
-                text: 'CyberMusik te da la bienvenida',
+                text: 'Agronet te da la bienvenida',
                 icon: 'success',
                 confirmButtonText: 'OK',
                 customClass: {

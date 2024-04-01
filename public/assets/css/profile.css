@@ -1,118 +1,4 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box; /*para que el tamaño de los elementos no se modifique*/
-}
 
-body{
-    margin:0;
-    display: block; /*permite que los elementos se acomoden en varias lineas*/
-    justify-content: center;
-    align-items: center;
-    position: relative; /*para que el contenedor se ajuste al tamaño de los elementos*/
-    background-color: #e1e4e4;
-	font-family: 'Roboto', sans-serif;
-}
-
-header{
-    color: white;
-}
-
-
-.voto{
-    border-radius: 20px;
-    width: 20%;
-    height: 40px;
-    font-size: medium;
-}
-
-.comentario{
-    background-color: #e1e4e4;
-    width: 300px;
-    height: 40px;
-}
-
-.btn-comentar {
-    font-size: medium;
-    width: 50%;
-    height: 40px;
-    text-align: center;
-    background-color: white;
-    border-color: #e1e4e4;
-    color: #141e28;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-    animation-delay: 0.3s;
-}
-
-
-.btn-comentar:hover {
-    background-color: #e1e4e4;
-}
-
-.navbar-expand-lg{
-    background-color: #141e28; 
-}
-
-.navbar{
-    position: sticky;
-}
-
-.dropdown-menu{
-    list-style: none;
-}
-
-.container-fluid{
-    color: white;
-}
-
-hr {
-    border-style: inset;
-}
-
-
-/* Animación de aparición */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(3px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-*{
-    opacity: 1;
-    animation-name: fadeInUp;
-    animation-duration: .6s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-}
-
-.slider, .slider * {
-    animation: none !important;
-    opacity: 1 !important; /* Asegúrate de que sean completamente visibles */
-}
-
-header {
-    animation-delay: 0.1s;
-}
-
-.contact-form {
-    animation-delay: 0.2s;
-}
-
-.btn-custom {
-    animation-delay: 0.3s;
-}
-
-.card-header > a{
-    text-decoration: none;
-    color: #141e28;
-}
 
 .card-header > a > img{
     border-radius: 20px;
@@ -284,7 +170,7 @@ header {
 }
 
 .btn-primary.form-control {
-    background-color: #f1a935;
+    background-color: #17ad09;
     color: white; 
     border: none;
     padding: 10px 15px;
@@ -295,7 +181,7 @@ header {
 }
 
 .btn-primary.form-control:hover {
-    background-color: #fdc56b;
+    background-color: #05770e;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
 }
 
