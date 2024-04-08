@@ -9,7 +9,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="./../../assets/css/inicio.css">
-  <link rel="stylesheet" href="../../assets/css/generos.css">
+  <link rel="stylesheet" href="../../assets/css/artistas.css">
   <link rel="stylesheet" href="../../assets/css/footer.css">
   <link rel="shortcut icon" href="./../../assets/img/internos/AgroNet mini no-bg white.png">
 </head>
@@ -43,6 +43,9 @@
             <li class="nav-item">
               <a class="nav-link" href="/views/contacto/contactanos.html">Contáctanos</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/index/learn.html">Aprende a usar la página</a>
+            </li>
           </ul>
           <div class="btn-group dropstart" style="margin-right: 20px;">
             <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Mi
@@ -60,93 +63,33 @@
 
   <div class="text-center mt-5">
     <h1><i class="fas fa-lemon " style="color: #155340;"></i> Frutas y Verduras</h1>
-</div>
-  <div class="container mt-5">
+  </div>
+    
+  <div class="container mt-4">
     <div class="row">
-        <div class="col mb-4">
-            <div class="card">
-                <div class="row">
-                <div class="tarjeta-imagen col-lg-4">
-                    <div class="d-flex justify-content-center">
-                      <img src="../../assets/img/productos/aguacate.png" class="card-img-top artist-image p-3 mt-4"
-                        alt="Genero 1">
-                    </div>
-                    <h2 class="card-title text-center">Aguacate</h2>
-                    <p class="card-text text-center p-3 mb-4">En temporada de Super Bowl, México exporta más de 100 mil toneladas, que se consumen en forma de guacamole.</p>
-                </div>
-                <div class="card-body col-lg-8">
-                    <div>
-                      <p>Hoy en día, junto con productos como el maíz y el chile, el aguacate forma parte de una tradición culinaria rodeada de historia, religión, rituales y costumbres provenientes de siglos anteriores y que se extienden más allá de la alimentación tradicional o nutricionalmente equilibrada.</p>
-                        <hr>
-                    <div class="d-flex justify-content-end">
-                    </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+        <div class="col">
+            <form class="search-bar">
+                <input class="search-input" type="search" placeholder="Buscar por producto..." aria-label="Search">
+                <button class="search-button" type="submit">Buscar</button>
+            </form>
         </div>
     </div>
-</div>
-
-
-<div class="container mt-5">
-  <div class="row">
-      <div class="col mb-4">
-          <div class="card">
-              <div class="row">
-              <div class="tarjeta-imagen col-lg-4">
-                  <div class="d-flex justify-content-center">
-                    <img src="../../assets/img/productos/limon.png" class="card-img-top artist-image p-3 mt-4"
-                      alt="Genero 2">
-                  </div>
-                  <h2 class="card-title text-center">Limón</h2>
-                  <p class="card-text text-center p-3 mb-4">El limón es el compañero perfecto para saborear con tacos, pozole, diferentes tipos de caldos, en agua refrescante e incluso en postres. </p>
-              </div>
-              <div class="card-body col-lg-8">
-                  <div>
-                    <p>Este fruto contiene,  vitaminas C y B; proporciona calcio, fósforo y hierro, además de considerarse refrescante y con propiedades antisépticas, por mencionar algunas.
-
-                      Aunado a lo anterior, se le atribuye el alivio para ciertas enfermedades de las vías respiratorias e inflamaciones de la garganta, por su propiedad antibacterial y antiviral.</p>
-                      <hr>
-                  <div class="d-flex justify-content-end">
-                  </div>
-                  </div>
-              </div>
-          </div>
-          </div>
-      </div>
   </div>
-</div>
 
-
-<div class="container mt-5">
-  <div class="row">
-      <div class="col mb-4">
-          <div class="card">
-              <div class="row">
-              <div class="tarjeta-imagen col-lg-4">
-                  <div class="d-flex justify-content-center">
-                    <img src="../../assets/img/productos/fresa.png" class="card-img-top artist-image p-3 mt-4"
-                      alt="Genero 2">
-                  </div>
-                  <h2 class="card-title text-center">Fresa</h2>
-                  <p class="card-text text-center p-3 mb-4">Para un óptimo cultivo de fresas frescas se recomiendan suelos equilibrados y ricos en materia orgánica.</p>
-              </div>
-              <div class="card-body col-lg-8">
-                  <div>
-                    <p>Este delicioso fruto de color rojo tiene un sabor dulce y presenta un característico aroma, disfrutado por muchos en postres y dulces, así como por mermeladas, jaleas e, inclusive, tés e infusiones.
-
-                      En México, la producción de fresas frescas coloca a nuestro país en el tercer lugar a nivel mundial, con un promedio de 639 miles de toneladas, esto tan sólo en el periodo 2016 a 2020, y en lo referente a las exportaciones, las y los productores de este fruto se llevan la medalla de oro, ya que en el periodo 2017-2021 los ingresos promedio por su compra ascendieron a 784 mdd.</p>
-                      <hr>
-                  <div class="d-flex justify-content-end">
-                  </div>
-                  </div>
-              </div>
-          </div>
-          </div>
-      </div>
+  <div class="container mt-4">
+    <div class="row" id="profile-container">
+        <!-- Aquí se mostrarán los perfiles recibidos del backend -->
+    </div>
   </div>
-</div>
+
+  <div class="text-center mt-5">
+    <h1><i class="fas fa-ghost" style="color: #155340;"></i> Productores Recomendados</h1>
+  </div>
+  <div class="container mt-5">
+    <div class="row" id="trnd">
+    </div>
+  </div>
+
 
 
   <br>
@@ -156,8 +99,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./../../assets/js/checklogin.js"></script>
+  <script src="./../../assets/js/checklogin.js"></script> 
+  <script src="./../../assets/js/getProd.js"></script>
 
-
-</body>
+</body> 
 
 </html>

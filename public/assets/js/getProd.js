@@ -7,9 +7,9 @@ $(document).ready(function() {
         }
         const profilesContainer = $('#profile-container')[0]; // Obtener el elemento DOM
         $(profilesContainer).empty();
-        const searchTerm = $('.search-input').val() 
+        const searchTerm = $('.search-input').val()
         try {
-            const url = `/api/search?name=${encodeURIComponent(searchTerm)}`;
+            const url = `/api/searchProd?name=${encodeURIComponent(searchTerm)}`;
             $.ajax({
                 type: "GET",
                 url: url,
@@ -27,7 +27,7 @@ $(document).ready(function() {
                         artistImageContainer.classList.add("artist-image-container");
                 
                         const img = document.createElement("img");
-                        img.src = `/uploads/${found.profilePhoto}`;
+                        img.src = `/uploads/${found.photo}`;
                         img.classList.add("card-img-top", "artist-image", "p-3", "mt-4");
                         img.alt = found.name;
                 
@@ -38,12 +38,18 @@ $(document).ready(function() {
                         h2.classList.add("card-title", "text-center");
                         h2.appendChild(document.createTextNode(found.name));
                 
-                        const p = document.createElement("p");
+                        let p = document.createElement("p");
                         p.classList.add("card-text");
-                        p.appendChild(document.createTextNode(found.genre));
+                        p.appendChild(document.createTextNode(found.productorName));
+                        let p2 = document.createElement("p");
+                        p2.classList.add("card-text");
+                        p2.appendChild(document.createTextNode(found.descriptionProductor));
+                        let p3 = document.createElement("p");
+                        p3.classList.add("card-text");
+                        p3.appendChild(document.createTextNode("Precio: " + found.precio + " " + found.por));
                 
                         const a = document.createElement("a");
-                        a.href = "#";
+                        a.href = `/api/albums/show/spec/${found.productorId}?albumId=${found.productId}`;
                         a.classList.add("btn", "btn-custom");
                         a.id = found._id;
                         a.appendChild(document.createTextNode("Ver Perfil"));
@@ -51,6 +57,8 @@ $(document).ready(function() {
                         artistImageContainer.appendChild(img);
                         cardBody.appendChild(h2);
                         cardBody.appendChild(p);
+                        cardBody.appendChild(p2);
+                        cardBody.appendChild(p3);
                         cardBody.appendChild(a);
                         card.appendChild(artistImageContainer);
                         card.appendChild(cardBody);
@@ -58,15 +66,11 @@ $(document).ready(function() {
                 
                         profilesContainer.appendChild(artistaDiv);
 
-                        $(`#${found._id}`).on('click', (event) => {
-                            event.preventDefault();
-                            window.location.href = `/api/artist/public/${found._id}`;
-                        });
                     });
-                },
+                }, 
                 error: function (error) {
                     const artistaDiv = document.createElement("div");
-                    const errorMessage = document.createTextNode(`No se encontró ningún productor llamado "${searchTerm}"`);
+                    const errorMessage = document.createTextNode(`No se encontró ningún artista llamado "${searchTerm}"`);
                 
                     const h2Element = document.createElement("h2");
                     h2Element.style.textAlign = "center";
@@ -117,5 +121,4 @@ function trendArt() {
         }
     });
 }
-
 

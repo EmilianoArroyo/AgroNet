@@ -17,8 +17,9 @@ router.post('/review/dislike/:reviewId', secquery, auth, artistController.dislik
 router.post('/review/like/:reviewId', secquery, auth, artistController.likeRev);
 
 router.get('/albums/show/:artistId',secquery,artistController.showAlbums);
-router.get('/search',secquery,artistController.search);
-router.get('/artist/public/:artistId',secquery,artistController.perfilPublico);
+router.get('/search',secquery,artistController.search); 
+router.get('/searchProd',secquery,artistController.searchProd);
+router.get('/artist/public/:artistId',secquery,artistController.perfilPublico); 
 router.get('/albums/show/spec/:artistId',secquery,lOn,artistController.album);
 router.get('/show/reviews/:albumId',lOn,secquery,artistController.listReviews);
 router.get('/del/show/albums',auth,secquery,artistController.showAlbums);

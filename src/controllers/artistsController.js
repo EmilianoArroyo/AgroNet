@@ -125,6 +125,49 @@ class ArtistController {
         }
     }
 
+    async searchProd(req, res){
+        try {
+            var query = req.query.name;
+            query = query.replace(/[.]/g, '');
+            if (!query){
+                return res.status(404).send('Introduce una búsqueda válida');
+            }
+            const Productores = await Artist.find({
+                'albums': {
+                  '$elemMatch': {
+                    'name': {$regex: `${query}`, $options: 'i'}
+                  }
+                }
+            })
+            let array = [];
+            Productores.forEach((productor) => {
+                const productosEncontrados = productor.albums.filter(album => 
+                  album.name.toLowerCase().includes(query.toLowerCase())
+                );
+                productosEncontrados.forEach((producto) => {
+                    let data = {
+                        name: producto.name,
+                        productorName: productor.name,
+                        descriptionProductor: productor.description,
+                        por: producto.type,
+                        precio: producto.genre,
+                        productorId: productor._id,
+                        productId: producto._id,
+                        photo: producto.albumPhoto
+                    }
+                    array.push(data);
+                });
+            });
+            if (array.length === 0) {
+                return res.status(404).send('Artista no encontrado');
+            }
+
+            res.send(array);
+        } catch (error) {
+            res.status(500).send('Error al buscar el artista'+error);
+        }
+    }
+
     async deleteAlbum(req, res) {
         try {
             const artistId = req.user._id;
